@@ -1,1 +1,1 @@
-# Unlock-Academy
+# Unlock Academy

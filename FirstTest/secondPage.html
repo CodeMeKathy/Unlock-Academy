@@ -54,74 +54,131 @@
       Add alt='A boat moving on a body of water in Suzhou, China photo by Loren Gu on Unsplash'
     }*/
 
-   
-    .herodiv2 {
-      background-color: #EDD7D5;
-      color: #AD994B;
-
-    }
-    
-    .herodiv2 li {
-      color: #6F6D6D !important;
-      list-style-type: none;
-      margin-left: -40px;
-    }
-    .herodiv2 ol {
-      color: #6F6D6D !important;
-      list-style-type: none;
-      margin-left: -75px;
-    }
-
     .hero-text{
       text-align: center;
       justify-content: center;
       /* margin: 0; */
       /* padding: auto; */
     }
-  </style>
 
+/* 2nd Hero Div Styling */
+   
+    .heroDiv2 {
+      background-color: #F9F2E7;
+      color: #AD994B;
+
+    }
+
+    .heroDiv2Container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .leftDiv {
+      background-color: #6F6D6D;
+      width: 50%;
+      height: 300px;;
+    
+    }
+
+    .rightDiv {
+      background-color: rgb(158, 98, 98);
+      width: 50%;
+      height: 300px;
+    }
+    
+    /* .heroDiv2 li {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -40px;
+    }
+    .heroDiv2 ol {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -75px;
+    } */
+
+/* 3rd Hero Div Styling */
+
+    .heroDiv3 {
+      background-color: #EDD7D5;
+      color: #AD994B;
+
+    }
+    
+    .heroDiv3 li {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -40px;
+    }
+    .heroDiv3 ol {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -75px;
+    }
+
+  </style>
 </head>
 <body>
   
-<div class="hero image1 flex-center">
+  <div class="hero image1 flex-center">
 
-  <div class="hero-text">
-    <h1>Welcome</h1>
-    <h2>explore what makes us unique</h2>
-    <!-- <h3>∨</h3> -->
-    <p>More Down Here
-    <br><span>∨</span></p>
+    <div class="hero-text">
+      <h1>Welcome</h1>
+      <h2>explore what makes us unique</h2>
+      <!-- <h3>∨</h3> -->
+      <p>More Down Here
+      <br><span>∨</span></p>
 
+      
+    </div>
+
+  </div>
+
+  <div class="hero heroDiv2 flex-center">
+
+      <div class="hero-text">
+        <h1>Title</h1>
+
+        <div class="heroDiv2Container row">
+            <div class="leftDiv">
+             TEXT    
+            </div>
+            <div class="rightDiv">
+              TEXT
+            </div>
+          </div>
+        
+        <h3>∨</h3>
+      </div>
     
   </div>
 
-</div>
 
-<div class="hero herodiv2 flex-center">
+  <div class="hero heroDiv3 flex-center">
 
-    <div class="hero-text">
-      <h1>Experience First Hand</h1>
-      <p> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.
-        <ul>
-          <li>Health</li>
-          <li>Wealth</li>
-          <li>Happiness</li>
-          <ol>Don't Forget</ol>
-        </ul>
-      </p>
-      <!-- <h2>Our Products</h2> -->
-      <h3>∨</h3>
-    </div>
-  
+      <div class="hero-text">
+        <h1>Experience First Hand</h1>
+        <p> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.
+          <ul>
+            <li>Health</li>
+            <li>Wealth</li>
+            <li>Happiness</li>
+            <ol>Don't Forget</ol>
+          </ul>
+        </p>
+        <!-- <h2>Our Products</h2> -->
+        <h3>∨</h3>
+      </div>
+    
   </div>
-<!-- 
+  <!-- 
 
-Use all of the following elements in your secondPage.html document:
+  Use all of the following elements in your secondPage.html document:
 
-<img>
-And if you’re feeling lucky: <video> 
--->
+  <img>
+  And if you’re feeling lucky: <video> 
+  -->
 
-  
 </body>
 </html>

@@ -8,11 +8,23 @@
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="secondPage.css" /> -->
 
   <style>
+
+  /* Use all of the following CSS Properties in your embedded css:
+
+  border 
+  font-size 
+  font-weight
+  text-transformation */
+
     body {
       font-family: Lobster;
-      font-size: 2.5em;
+      /* font-size: 2.5em; */
+      color: whitesmoke;
     }
-
+    
+    h1 {
+      font-size: 3em;
+    }
     .flex-center {
       display: flex;
       flex-direction: column;
@@ -20,12 +32,10 @@
       align-content: center;
     }
 
-    .hero-image{
+    .hero{
       min-height: calc(100vh - 10px);
       /* width: calc(100% - 10px); */
       width: 100%;
-      background-image: /*linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), */url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
-      /* Add alt='NY skyline at sunset photo by Ben O'Bro on Unsplash' */
       background-size: cover;
       background-repeat: no-repeat;
       /* background-color: #6CBDB5; */
@@ -33,6 +43,35 @@
 
     
     }
+
+    .image1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+      /* Add alt='NY skyline at sunset photo by Ben O'Bro on Unsplash' */
+    }
+
+    /*.image2 {
+      background-image: /*linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1475914721800-bf8fa52930b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+      Add alt='A boat moving on a body of water in Suzhou, China photo by Loren Gu on Unsplash'
+    }*/
+
+   
+    .herodiv2 {
+      background-color: #EDD7D5;
+      color: #AD994B;
+
+    }
+    
+    .herodiv2 li {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -40px;
+    }
+    .herodiv2 ol {
+      color: #6F6D6D !important;
+      list-style-type: none;
+      margin-left: -75px;
+    }
+
     .hero-text{
       text-align: center;
       justify-content: center;
@@ -44,40 +83,44 @@
 </head>
 <body>
   
-<div class="hero-image flex-center">
+<div class="hero image1 flex-center">
 
   <div class="hero-text">
     <h1>Welcome</h1>
-    <h2>join us</h2>
+    <h2>explore what makes us unique</h2>
+    <!-- <h3>∨</h3> -->
+    <p>More Down Here
+    <br><span>∨</span></p>
+
+    
   </div>
 
 </div>
+
+<div class="hero herodiv2 flex-center">
+
+    <div class="hero-text">
+      <h1>Experience First Hand</h1>
+      <p> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.
+        <ul>
+          <li>Health</li>
+          <li>Wealth</li>
+          <li>Happiness</li>
+          <ol>Don't Forget</ol>
+        </ul>
+      </p>
+      <!-- <h2>Our Products</h2> -->
+      <h3>∨</h3>
+    </div>
+  
+  </div>
 <!-- 
 
 Use all of the following elements in your secondPage.html document:
-<html>
-<head>
-<style>
-<h1>
-<h2>
-<h3>
-<div>
-<p>
-<span>
-<img>
-<ul>
-<ol>
-<li>
-And if you’re feeling lucky: <video> 
-Use all of the following CSS Properties in your embedded css:
-color 
-border 
-font-size 
-font-weight
-text-transformation
-background-color
 
- -->
+<img>
+And if you’re feeling lucky: <video> 
+-->
 
   
 </body>

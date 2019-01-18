@@ -46,7 +46,11 @@
 
     .image1 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
-      /* Add alt='NY skyline at sunset photo by Ben O'Bro on Unsplash' */
+      /* Add alt='NY skyline at sunset photo by Ben O'Bro on Unsplash'
+      
+      Photo by The Roaming Platypus on Unsplash
+      
+       */
     }
 
     /*.image2 {
@@ -69,21 +73,37 @@
 
     }
 
-    .heroDiv2Container {
+    .row {
       display: flex;
       flex-direction: row;
+      width: 100%;
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+      /* align-content: center; */
+      /* align-items: center; */
     }
 
-    .leftDiv {
+    .column {
+      display: flex;
+      flex-direction: column;
+      /* flex: 1; */
+    }
+
+    .prod-item {
+      flex-flow: column;
+    }
+
+    .leftColumn {
       background-color: #6F6D6D;
-      width: 50%;
-      height: 300px;;
+      /* width: 50%; */
+      height: 300px;
+      text-align: left;
     
     }
 
-    .rightDiv {
+    .rightColumn {
       background-color: rgb(158, 98, 98);
-      width: 50%;
+      /* width: 50%; */
       height: 300px;
     }
     
@@ -111,6 +131,7 @@
       list-style-type: none;
       margin-left: -40px;
     }
+
     .heroDiv3 ol {
       color: #6F6D6D !important;
       list-style-type: none;
@@ -140,15 +161,21 @@
       <div class="hero-text">
         <h1>Title</h1>
 
-        <div class="heroDiv2Container row">
-            <div class="leftDiv">
-             TEXT    
-            </div>
-            <div class="rightDiv">
-              TEXT
+        <div class="row">
+          <div class='column'>  
+            <div class="prod-item leftColumn">
+             <p>
+                <h3>THRIVING</h3>
+                Muffin fruitcake fruitcake oat cake icing danish cookie bear claw. Dragée marshmallow I love I love topping toffee. Jelly-o marzipan pastry ice cream danish. Ice cream I love cupcake sugar plum gingerbread jujubes. I love wafer donut lollipop topping jelly-o. Jelly-o toffee soufflé. Marshmallow biscuit donut toffee bonbon cotton candy muffin cake. Ice cream pie I love marzipan. Lemon drops cookie sweet roll. Chocolate candy biscuit. 
+             </p>    
             </div>
           </div>
-        
+          <div class='column'>  
+            <div class="prod-item rightColumn">
+              <img src="FirstTest/Images/roaming-platypus.jpg" alt="A picture of a city landscape at sunset by the Roaming Platypus from Unsplash" width="500" height="300">
+            </div>
+          </div>
+        </div>
         <h3>∨</h3>
       </div>
     

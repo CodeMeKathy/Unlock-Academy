@@ -5,3 +5,27 @@ body {
 h1 {
   color: aquamarine;
 }
+
+.mainVideo {
+  width: 850px;
+  height: 500px;
+  background-color: bisque;
+  margin-left: 20px;
+}
+
+.rightPanel {
+  float: right;
+}
+
+.rightPanel li {
+  list-style-type: none;
+  
+}
+
+.smallVideo {
+  height: 300px;
+  width: 400px;
+  background-color: azure; 
+  margin-right: 20px;
+  /* float: right; */
+}

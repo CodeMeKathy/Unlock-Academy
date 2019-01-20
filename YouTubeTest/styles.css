@@ -7,11 +7,21 @@ h1 {
 }
 
 .mainVideo {
-  width: 850px;
+  width: 750px;
   height: 500px;
-  background-color: bisque;
+  /* background-color: bisque; */
   margin-left: 20px;
 }
+
+.mainVideo iframe {
+  /* width: 560px;
+  height: 315px; */
+  height: 400px;
+  width: 700px;
+  margin-right: 20px;
+  /* float: right; */
+}
+
 
 .rightPanel {
   float: right;
@@ -24,8 +34,16 @@ h1 {
 
 .smallVideo {
   height: 300px;
-  width: 400px;
+  width: 350px;
   background-color: azure; 
   margin-right: 20px;
   /* float: right; */
 }
+
+.smallVideo iframe {
+  height: 300px;
+  width: 350px;
+  margin-right: 20px;
+  /* float: right; */
+}
+

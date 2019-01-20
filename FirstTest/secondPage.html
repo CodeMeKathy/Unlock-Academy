@@ -70,14 +70,19 @@
     .heroDiv2 {
       background-color: #F9F2E7;
       color: #AD994B;
-
+      display: flex;
+      flex-direction: row;
+      
     }
 
     .row {
       display: flex;
       flex-direction: row;
+      /* align-items: stretch; */
+      /* flex: 1; */
+  
       width: 100%;
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
       /* justify-content: center; */
       /* align-content: center; */
       /* align-items: center; */
@@ -86,17 +91,18 @@
     .column {
       display: flex;
       flex-direction: column;
-      /* flex: 1; */
+      flex: 50%;
     }
 
     .prod-item {
       flex-flow: column;
+
     }
 
     .leftColumn {
       background-color: #6F6D6D;
       /* width: 50%; */
-      height: 300px;
+      /* height: 100%; */
       text-align: left;
     
     }
@@ -104,7 +110,7 @@
     .rightColumn {
       background-color: rgb(158, 98, 98);
       /* width: 50%; */
-      height: 300px;
+      /* height: 100%; */
     }
     
     /* .heroDiv2 li {
@@ -158,10 +164,10 @@
 
   <div class="hero heroDiv2 flex-center">
 
-      <div class="hero-text">
-        <h1>Title</h1>
+      <div class="hero-text row">
+        <!-- <h1>Title</h1> -->
 
-        <div class="row">
+        <!-- <div class="row"> -->
           <div class='column'>  
             <div class="prod-item leftColumn">
              <p>
@@ -172,13 +178,13 @@
           </div>
           <div class='column'>  
             <div class="prod-item rightColumn">
-              <img src="FirstTest/Images/roaming-platypus.jpg" alt="A picture of a city landscape at sunset by the Roaming Platypus from Unsplash" width="500" height="300">
+              <img src="https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60" alt="A picture of a city landscape at sunset by the Roaming Platypus from Unsplash">
             </div>
           </div>
-        </div>
-        <h3>∨</h3>
+        <!-- </div> -->
+
       </div>
-    
+      <h3>∨</h3>    
   </div>
 
 

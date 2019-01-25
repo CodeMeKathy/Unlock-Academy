@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 
     <style>
@@ -21,9 +22,14 @@
       }
 
       h1 {
-        font-family: 'Mr De Haviland', cursive;
+        font-family: 'Pacifico', cursive;
         text-align: center;
-        font-size: 67px;
+        font-size: 57px;
+      }
+
+      .userResponse {
+        margin-left:75%;
+        margin-bottom: 100px;
       }
     </style>
 
@@ -58,7 +64,7 @@ Should Look Like this when done: https://wireframe.cc/VPu97h -->
       var userAgeDivided10 = ageNowNumber / 10;
 
       document.write("<h1>Manipulating Your Age</h1>");
-      document.write("<h2>If Age = " + userAge + " </h2>");
+      document.write("<h2><span class='userResponse'>If Your Age = " + userAge + " </h2></span>");
 
       document.write("<h2>Your Age Plus 10 = " + userAgePlus10 + " Years Old</h2>");
       document.write("<h2>Your Age Minus 10 = " + userAgeMinus10 + " Years Old</h2>");
@@ -66,7 +72,6 @@ Should Look Like this when done: https://wireframe.cc/VPu97h -->
       document.write("<h2>Your Age Divided by 10 = " + userAgeDivided10 + " Years Old</h2>");
     </script>
     
-
 
   </body>
 </html>

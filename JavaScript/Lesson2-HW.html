@@ -1,4 +1,39 @@
-<!-- Lesson 2 Homework
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Age Manipulator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
+
+
+    <style>
+
+      body {
+        background-color: #E5B8AD;
+      }
+    
+      script{
+
+        font-family: 'Raleway', sans-serif;
+      }
+
+      h1 {
+        font-family: 'Mr De Haviland', cursive;
+        text-align: center;
+        font-size: 67px;
+      }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div></div>
+<!-- Assignment Requirements:
+Lesson 2 Homework
 Use JavaScript to Manipulate User Input
 Prompt The User For their Age
 Use Javascript to create 4 Elements on the HTML Page
@@ -11,3 +46,29 @@ Perform the calculations
 Perform the concatenations
 write entire sentence / h1 element to the HTML Document
 Should Look Like this when done: https://wireframe.cc/VPu97h -->
+    <script>
+
+      var userAge = prompt("Hello! May I ask your age?");
+      
+      var ageNowNumber = parseInt(userAge);
+
+      var userAgePlus10 = ageNowNumber + 10;
+      var userAgeMinus10 = ageNowNumber - 10;
+      var userAgeTimes10 = ageNowNumber * 10;
+      var userAgeDivided10 = ageNowNumber / 10;
+
+      document.write("<h1>Manipulating Your Age</h1>");
+      document.write("<h2>If Age = " + userAge + " </h2>");
+
+      document.write("<h2>Your Age Plus 10 = " + userAgePlus10 + " Years Old</h2>");
+      document.write("<h2>Your Age Minus 10 = " + userAgeMinus10 + " Years Old</h2>");
+      document.write("<h2>Your Age Times 10 = " + userAgeTimes10 + " Years Old</h2>");
+      document.write("<h2>Your Age Divided by 10 = " + userAgeDivided10 + " Years Old</h2>");
+    </script>
+    
+
+
+  </body>
+</html>
+
+

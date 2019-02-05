@@ -7,6 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="secondPage.css" /> -->
 
+  <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
   <style>
 
   /* Use all of the following CSS Properties in your embedded css:
@@ -16,6 +25,8 @@
   font-weight
   text-transformation */
 
+  /* General */
+
     body {
       font-family: Lobster;
       /* font-size: 2.5em; */
@@ -23,8 +34,23 @@
     }
     
     h1 {
-      font-size: 3em;
+      font-size: 6em;
     }
+
+    h3 {
+
+      font-family: 'Sacramento', cursive;
+      font-size: 3em;
+
+    }
+
+    .title3 {
+      /* position: absolute; */
+      /* justify-content: center; */
+      /* align-items: center */
+      display: inline-block;
+    }
+
     .flex-center {
       display: flex;
       flex-direction: column;
@@ -35,6 +61,7 @@
     .hero{
       min-height: calc(100vh - 10px);
       /* width: calc(100% - 10px); */
+
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -70,7 +97,10 @@
     .heroDiv2 {
       background-color: #F9F2E7;
       color: #AD994B;
-      display: flex;
+      /* display: flex; */
+      /* text-align: center; */
+      /* justify-content: center; */
+      /* align-content: center; */
       flex-direction: row;
       
     }
@@ -88,7 +118,7 @@
       /* align-items: center; */
     }
 
-    .column {
+    /* .column {
       display: flex;
       flex-direction: column;
       flex: 50%;
@@ -101,17 +131,17 @@
 
     .leftColumn {
       background-color: #6F6D6D;
-      /* width: 50%; */
-      /* height: 100%; */
+      width: 50%;
+      height: 100%;
       text-align: left;
     
     }
 
     .rightColumn {
       background-color: rgb(158, 98, 98);
-      /* width: 50%; */
-      /* height: 100%; */
-    }
+      width: 50%;
+      height: 100%;
+    } */
     
     /* .heroDiv2 li {
       color: #6F6D6D !important;
@@ -123,6 +153,26 @@
       list-style-type: none;
       margin-left: -75px;
     } */
+
+
+    .grid li {
+      padding:  50px;
+      margin: 20px;
+      height: 300px;
+      width: 400px;
+      list-style-type: none; 
+
+
+      
+
+      /* background-clip: content-box; */
+      background-size: cover;
+      background-position: center;
+      /* background-color: #333; */
+
+    }
+
+
 
 /* 3rd Hero Div Styling */
 
@@ -163,28 +213,18 @@
   </div>
 
   <div class="hero heroDiv2 flex-center">
+    <div class="hero-text"> 
+      <h3>Thriving</h3>
 
-      <div class="hero-text row">
-        <!-- <h1>Title</h1> -->
-
-        <!-- <div class="row"> -->
-          <div class='column'>  
-            <div class="prod-item leftColumn">
-             <p>
-                <h3>THRIVING</h3>
-                Muffin fruitcake fruitcake oat cake icing danish cookie bear claw. Dragée marshmallow I love I love topping toffee. Jelly-o marzipan pastry ice cream danish. Ice cream I love cupcake sugar plum gingerbread jujubes. I love wafer donut lollipop topping jelly-o. Jelly-o toffee soufflé. Marshmallow biscuit donut toffee bonbon cotton candy muffin cake. Ice cream pie I love marzipan. Lemon drops cookie sweet roll. Chocolate candy biscuit. 
-             </p>    
-            </div>
-          </div>
-          <div class='column'>  
-            <div class="prod-item rightColumn">
-              <img src="https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60" alt="A picture of a city landscape at sunset by the Roaming Platypus from Unsplash">
-            </div>
-          </div>
-        <!-- </div> -->
-
-      </div>
-      <h3>∨</h3>    
+      <ul class="grid hero-text">
+          <li class="work" style="background-image: url(https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60);"></li>
+          <li class="work" style="background-image: url(https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60);"></li>
+          <li class="work" style="background-image: url(https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60);"></li>
+          <li class="work" style="background-image: url(https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=60;"></li>
+        <div class="row flex-center">
+          <p><span>∨</span></p>
+        </div>
+    </div>
   </div>
 
 

@@ -13,6 +13,10 @@
       body {
 
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
       }
 
       input {
@@ -23,37 +27,86 @@
       /* button {
         width: 10vw;
       } */
+
+      #userImage {
+        width: 300px;
+        height: 200px;
+        background-color: #75cece;
+
+
+      }
+
+      .userImageURL {
+        width: 300px;
+        height: 200px;
+
+      }
+
+
   </style>
 
 </head>
 <body>
   
-  <h1> Submit Photo URL </h1>
+  <section>
+    
+    <div>
+
+      <h1> Submit Photo URL </h1>
 
 
+    </div>
 
-  <form>
+    <div>
 
-      <input type="url" name="userImageURL" id="userImageURL"
-       placeholder="https://example.com"
-       pattern="https://.*" size="35vw"
-       required>
-      
-       <!-- Example Website: https://images.pexels.com/photos/1097065/pexels-photo-1097065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500  -->
+        <form>
 
-       <br>
+          <input type="url" name="userImageURL" id="userImageURLInput"
+          placeholder="https://example.com"
+          pattern="https://.*" size="35vw"
+          required>
+          
+          <!-- Example Website: https://images.pexels.com/photos/1097065/pexels-photo-1097065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500  -->
 
-      <button name="" type="submit" onclick = "submitImageURL()">Click To Display Image URL Below</button>
-   </form>  
+          <br>
 
-   <img src="" class="userImage" alt="" id="userImage"/>
+          <button name="" type="submit" onclick = "submitImageURL()">Click To Display Image URL Below</button>
+      </form> 
 
+    </div>
+ 
+
+    <div id="userImage">
+
+      <img src="" class="userImage" alt="" id="userImage"/>
+
+    </div>
+
+
+    </div>
+
+  </section>
   <script>
   
-    // Pass through the userURL as a parameter from the userURL input.
+    // Pass thru the userImageURL as a parameter from the userURL input field.
     // Reference Image Element
     // Pass through the new image url to the src attribute.
   
+    var inputElement = document.getElementById('userImageURLInput');
+
+    var userImageURL = '';
+    
+    inputElement.addEventListener('change', function(e) {
+
+      userImageURL = e.target.value;
+      document.write(userImageURL);
+
+    
+    })
+    
+
+
+
   </script>
 
 </body>

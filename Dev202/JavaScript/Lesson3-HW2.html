@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Images Dynamically</title>
+
+  <style>
+  
+    body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 2px;
+    }
+
+    h5 {
+      margin-top: 5px !important;
+      padding-top: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section>
+
+    <div id="titleDiv">
+      
+      <h1>Submit Photo URL</h1>
+      <h5>BELOW</h5>
+    
+    </div>
+
+    <div id="form">
+      
+      <form action="">
+
+          <input type="url" name="userImageURL" id="userImageURLInput"
+          placeholder="https://example.com"
+          pattern="https://.*" size="35vw"
+          required>
+        
+        <br><br/>
+
+        <button id="submitBtn" onclick="displayImage()">Click to see your image</button>
+
+      </form>
+    
+    </div>
+
+    <div>
+
+      <img src="" alt="" id="dynamicImage"/>
+
+    </div>
+
+  </section>
+
+  <script>
+    
+
+
+
+  </script>
+
+</body>
+</html>

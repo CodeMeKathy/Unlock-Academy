@@ -7,25 +7,52 @@
   <title>URL Photo Loader</title>
 
   <style>
+
+    /* General */
     
-    body {
+      body {
 
-      text-align: center;
-    }
+        text-align: center;
+      }
 
-    input {
-      width: 40vw;
-    }
+      input {
+        width: 40vw;
+        text-align: center;
+      }
+
+      /* button {
+        width: 10vw;
+      } */
   </style>
 
 </head>
 <body>
   
-  <h1>Enter a URL to A Photo</h1>
-  <input type="text" placeholder="https://images.pexels.com/photos/1097065/pexels-photo-1097065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  <h1> Submit Photo URL </h1>
+
+
+
+  <form>
+
+      <input type="url" name="userImageURL" id="userImageURL"
+       placeholder="https://example.com"
+       pattern="https://.*" size="35vw"
+       required>
+      
+       <!-- Example Website: https://images.pexels.com/photos/1097065/pexels-photo-1097065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500  -->
+
+       <br>
+
+      <button name="" type="submit" onclick = "submitImageURL()">Click To Display Image URL Below</button>
+   </form>  
+
+   <img src="" class="userImage" alt="" id="userImage"/>
 
   <script>
   
+    // Pass through the userURL as a parameter from the userURL input.
+    // Reference Image Element
+    // Pass through the new image url to the src attribute.
   
   </script>
 

@@ -58,27 +58,34 @@
     
     </div>
 
-    <div>
+    <div id="imageDiv">
 
-      <img src="" alt="" id="dynamicImage">
+
 
     </div>
 
   </section>
 
   <script>
-    
-    function displayImage() {
-      // Psuedocode
-      // Pass thru the userImageURL as a parameter from the userURL input field.
-      // Reference Image Element
-      // Pass thru and update the new image url to the src attribute.
 
-      var userURLInputElement = document.getElementById('userImageURLInput');
-      var userImageURL = userURLInputElement.value;
- 
-      var userURLImageElement = document.getElementById('dynamicImage');
-      userURLImageElement.src = userImageURL;
+    // Psuedocode to create and populate image element with URL dynamically.
+      // Create an inputElement variable to access the DOM input element.
+      // Pass thru the userImageURL as a parameter from the userURL input field.
+      // Create image element.
+      // Add a 'src' attr to the image element
+      // Add an 'id' attr to the image element
+      // Display to the image element on to the page.
+
+    function displayImage() {
+
+      var inputElement = document.getElementById('userImageURLInput');
+      var url = inputElement.value; // user provided URL
+
+      var image = "<img src=" + url + " id='dynamicImage' />";
+      var imageDiv = document.getElementById("imageDiv");
+      imageDiv.innerHTML = image;
+
+
     }
       
 

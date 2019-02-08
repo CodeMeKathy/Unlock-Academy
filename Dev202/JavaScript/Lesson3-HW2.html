@@ -11,39 +11,138 @@
 
 <style>
 
+/* General */
+
   body {
+    /* width: calc(100% - 40px); */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* text-align: center; */
+    background-color: #fffee0;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+  }
+
+  #container {
     display: flex;
   }
+
+  .layoutCenter {
+    justify-content: center;
+  }
+
+  .center {
+    text-align: center
+  }
+
+
+  .productDiv {
+    background-color: #a2f7f7;
+    width: 30em;
+    /* order: 1; */
+  }
+
+  .quantityDiv {
+    background-color: #c198e7;
+    width: 50em;
+    /* order: 2; */
+  }
+
+  .totalDiv {
+    background-color: #d380b3;
+  }
+
+  .products {
+    margin: 10px;
+    height: 35px;
+  }
+
+  .quantities {
+    border: black solid 1px;
+    margin: 10px;
+    height: 25px;
+  }
+
+  #totalSection {
+    /* display: flex; */
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    float: left;
+    order: 3;
+
+  }
+
+/* Flexbox Containers */
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 25%;
+    margin: 20px;
+  }
+
 </style>
 
 </head>
 
 <body>
 
-  <section id="productSection">
-    
-    <div>
-      
+  <div class="row" >
+
+    <div class="column productDiv">
+      <div>
+        <h2>Product Name</h2>
+      </div>
+
+      <div class="products">
+        <h4>Product #1</h4>
+      </div>
+
+      <div class="products">
+        <h4>Product #2</h4>
+      </div>
+
+      <div class="products">
+        <h4>Product #3</h4>
+      </div>
     </div>
 
-  </section>
-
-  <section id="quantity">
-    
-    <div>
-      
+    <div class="column quantityDiv">
+        <div>
+          <h3>Quantity</h3>
+        </div>
+          
+        <div class="quantities">
+          <h3>1</h3>
+        </div>
+  
+        <div class="quantities">
+          
+          <h3>2</h3>
+        </div>
+  
+        <div class="quantities">
+          4
+          <!-- <h3>4</h3> -->
+        </div>
     </div>
-
-  </section>
-
-  <section id="checkoutCart">
-    
-    <div>
-      
+  </div>
+  <div class="row center totalDiv" >
+    <div class="column">
+        <button>
+          Add Total
+        </button>
+        <h4>Total</h4>
     </div>
+  </div>
 
-  </section>
+<script>
 
+</script>
 
 </body>
 </html>

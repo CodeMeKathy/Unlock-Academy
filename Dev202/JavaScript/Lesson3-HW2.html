@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <script src="main.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Righteous" rel="stylesheet">
+  <title>Lotus Designs Shoppe</title>
 
 <style>
 
@@ -18,7 +16,7 @@
     /* display: flex; */
     /* flex-direction: row; */
     /* text-align: center; */
-    background-color: #fffee0;
+    background-color: #E7EDEA;
     /* justify-content: center; */
     /* align-items: flex-start; */
     /* flex-wrap: wrap; */
@@ -53,15 +51,23 @@
     background-color: #d380b3;
   }
 
-  .products {
+  .product {
     margin: 10px;
     height: 35px;
   }
 
-  .quantities {
+  .quantity {
     border: black solid 1px;
     margin: 10px;
     height: 25px;
+  }
+
+  .productItemDiv {
+    display: flex;
+    flex: wrap;
+    background-color:#eafad7;
+    justify-content: space-around; 
+    text-align: justify;
   }
 
   #totalSection {
@@ -90,24 +96,33 @@
 </head>
 
 <body>
+  <div class="center"><h1>Lotus Designs<br> Shoppe</h1></div>
 
   <div class="row" >
 
     <div class="column productDiv">
       <div>
-        <h2>Product Name</h2>
+        <h2>Products</h2>
       </div>
 
-      <div class="products">
-        <h4>Product #1</h4>
+      <div class="product productItemDiv">
+        <h4 class="productItem">Mood Tracker</h4>
+        <h5 class="productPrice">$20</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=300&w=100" alt="February Sticker Bundle" class="productItemPic">
       </div>
 
-      <div class="products">
-        <h4>Product #2</h4>
+      <div class="product productItemDiv">
+        <h4 class="productItem">Habit Tracker</h4>
+        <h5 class="productPrice">$30</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=300&w=100" alt="February Sticker Bundle" class="productItemPic">
+
       </div>
 
-      <div class="products">
-        <h4>Product #3</h4>
+      <div class="product productItemDiv">
+        <h4 class="productItem">Sticker Bundle</h4>
+        <h5 class="productPrice">$50</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=300&w=100" alt="February Sticker Bundle" class="productItemPic">
+        
       </div>
     </div>
 
@@ -116,16 +131,26 @@
           <h3>Quantity</h3>
         </div>
           
-        <div class="quantities">
-          <h3>1</h3>
+        <div class="quantity">
+            <form action="/action_page.php">
+              <select name="quantityList">
+                <option value="0" class="itemQuantity">0</option>
+                <option value="1" class="itemQuantity">1</option>
+                <option value="2" class="itemQuantity">2</option>
+                <option value="3" class="itemQuantity">3</option>
+                <option value="4" class="itemQuantity">4</option>
+                <option value="5" class="itemQuantity">5</option>
+              </select>
+
+            </form>
         </div>
   
-        <div class="quantities">
+        <div class="quantity">
           
           <h3>2</h3>
         </div>
   
-        <div class="quantities">
+        <div class="quantity">
           4
           <!-- <h3>4</h3> -->
         </div>
@@ -136,13 +161,39 @@
         <button>
           Add Total
         </button>
-        <h4>Total</h4>
+        <h4>$Total</h4>
     </div>
   </div>
 
 <script>
 
+// PseudoCode:
+  // Declare cart
+  // Declare selectedProductList
+
+  // Initialize product variable and quantity
+  // Create a calculateTotal function w/ a for loop to loop through each product and multiply it by each corresponding quantity. 
+  // Onclick run calculateTotal()
+
+  let productItemPrice = document.getElementsByClassName('productPrice'); 
+      // Does this return a string which will need to be converted.
+      // parseInt() | This is a simple technique to convert a numerical string into a true number, ensuring that our calculation will be consistent.
+
+  return productItemPrice; // change to console.log() statement.
+
+  let selectedItemQuantity = document.getElementsByClassName('itemQuantity').value;
+
+  return selectedItemQuantity;
+
+  let itemTotal = (productItemPrice * selectedItemQuantity)
+
+  return itemTotal;
+
 </script>
 
 </body>
 </html>
+
+// To Do:
+//  - Change quantityItems to input fields
+//  - Create products and assign prices for the products. 

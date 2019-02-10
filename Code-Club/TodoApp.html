@@ -4,15 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Kathy Lambert" href="https://kathylambert.me/">
 
-  <title>Document</title>
+  <title>Get Shit Done To-Do App</title>
+
+  <style>
+  
+    #bodySection {
+      background-color: #F5E0D3;
+    }
+  </style>
+
 </head>
-<body>
+<body id=bodySection>
 
-  <h1>To Do App</h1>
+  <h1>Get Shit Done To-Do Appp</h1>
 
-  <form action="">
+  <form action="" id="addItemForm">
 
     <input type="text" autocomplete="off">
     <button>Create Item</button>
@@ -26,5 +34,19 @@
     <li>Random 3 <button>Delete</button></li>
   </ul>
   
+  <script>
+    
+    let addItemForm = document.getElementById('addItemForm')
+
+    addItemForm.addEventListener('submit', (e) => { 
+      e.preventDefault() // Prevents the web browser from attempting to refresh or submit data.
+      alert('Hello World')
+    })
+
+
+  </script>
+
+
+
 </body>
 </html>

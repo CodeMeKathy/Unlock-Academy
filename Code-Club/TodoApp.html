@@ -64,7 +64,7 @@
     })
 
     function createNewItem(x) {
-      let toDoListFormat = `<li class="to-doListItem"> ${x} <button >Delete</button></li>` //Alt approach creates a variable holding the new toDoListItem dynamically wrapped in the <li> tag.
+      let toDoListFormat = `<li class="to-doListItem"> ${x} <button  onclick='deleteToDoItem(this)'>Delete</button></li>` //Alt approach creates a variable holding the new toDoListItem dynamically wrapped in the <li> tag.
 
       toDoList.insertAdjacentHTML('beforeend', toDoListFormat) //Changed second parameter from x to toDoListFormat for alt approach
 
@@ -73,8 +73,8 @@
 
     }
 
-    function deleteToDoItem() {
-
+    function deleteToDoItem(elementToDelete) {
+      elementToDelete.parentElement.remove()
     }
 
 

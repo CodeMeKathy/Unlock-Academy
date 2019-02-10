@@ -6,42 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Kathy Lambert" href="https://kathylambert.me/">
 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
+
   <title>Get Shit Done To-Do App</title>
 
   <style>
   
-    #bodySection {
+    body {
       background-color: #F5E0D3;
+      
     }
+    
+    h1 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+    }
+
+    #addItemForm {
+      justify-content: center;
+      text-align: center;
+    }
+
+    h3, .to-doListItem {
+      font-family: 'Raleway', sans-serif;
+    }
+
   </style>
 
 </head>
 <body id=bodySection>
 
-  <h1>Get Shit Done To-Do Appp</h1>
+  <h1>Get Sh*t Done</h1>
 
   <form action="" id="addItemForm">
 
-    <input type="text" autocomplete="off">
-    <button>Create Item</button>
+    <input id="formInputField" type="text" autocomplete="off">
+    <button id="btn">Create Item</button>
   </form>
 
-  <h3>Need to Do</h3>
+  <h3>Need To-do:</h3>
 
-  <ul>
-    <li>Example 1 <button>Delete</button></li>
-    <li>Sample 2 <button>Delete</button></li>
-    <li>Random 3 <button>Delete</button></li>
+  <ul id="toDoList">
+    
   </ul>
   
   <script>
     
     let addItemForm = document.getElementById('addItemForm')
+    let formInputField = document.getElementById('formInputField')
+    let toDoList = document.getElementById('toDoList')
 
     addItemForm.addEventListener('submit', (e) => { 
       e.preventDefault() // Prevents the web browser from attempting to refresh or submit data.
-      alert('Hello World')
+      // createNewItem(`<li> ${formInputField.value} <button>Delete</button></li>`) // My method/approach
+      createNewItem(formInputField.value)
+     
     })
+
+    function createNewItem(x) {
+      let toDoListFormat = `<li class="to-doListItem"> ${x} <button >Delete</button></li>` //Alt approach creates a variable holding the new toDoListItem dynamically wrapped in the <li> tag.
+
+      toDoList.insertAdjacentHTML('beforeend', toDoListFormat) //Changed second parameter from x to toDoListFormat for alt approach
+
+      formInputField.value= ''
+      formInputField.focus()
+
+    }
+
+    function deleteToDoItem() {
+
+    }
 
 
   </script>

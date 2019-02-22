@@ -14,76 +14,76 @@
 
 <body>
 
-  <center> <h1> Quantity Per Product </h1> </center>
-  <div style="text-align:center;">
-          <div>
-              <p>Product #1</p>
-              <input type="text" id="product1" />
+    <div class="container">
+
+        <div class="row">
+    
+          <div class="column">
+    
+            <h1>Lotus Designs Shoppe</h1>
+            
+    
+            <div id="products">
+              <div>
+                  <h3>Products</h3>
+    
+              </div>
+              <div>
+                  <h3>Quantity</h3>
+              </div>
+              <div id="product1"> Product 1 - $20
+                <img src="" alt="">
+                <input type="text" id="qty1" placeholder="0">
+              </div>
+    
+              <div id="product2">Product #2 - $30
+                <img src="" alt="">
+                <input type="text" id="qty2" placeholder="0">
+              </div>
+    
+              <div id="product3">Product #3 - $50
+                <img src="" alt="">
+                <input type="text" id="qty3" placeholder="0">
+              </div>
+            </div>
+    
+    
           </div>
+        </div>
+    
+    
+      </div>
+    
 
-          <div>
-              <p>Product #2</p>
-              <input type="text" id="product2" />
-          </div>
 
-          <div>
-              <p>Product #3</p>
-              <input type="text" id="product3" />
-          </div>
-  </div>
-
-  <div style="text-align: center; margin-top:5%">
-
-      <button onclick="calculateTotal()" id="totalButton">Calculate Total </button>
-      <p id="totalAmount"> </p>
-  </div>
-  
 <script>
 
-  function calculateTotal() {
+  // Create a function to calculateCartTotal {
 
-    // Initialize the price of product #1    
-    // Initialize the price of product #2
-    // Initialize the price of product #3
+    // Initialize and get the product1Price from #product1
+    // Initialize and get the product2Price from #product2
+    // Initialize and get the product3Price from #product3
 
-    let product1Price = 20
-    let product2Price = 30
-    let product3Price = 50
+    // Convert string value of product1 into an integer
+    // Convert string value of product2 into an integer
+    // Convert string value of product3 into an integer
 
-    // get the value enter into input #1
-    // get the value enter into input #2
-    // get the value enter into input #3
+    // Get the input value from #product1Qty
+    // Get the input value from #product2Qty
+    // Get the input value from #product3Qty
 
-    let product1Quantity = document.getElementById('product1').value
-    let product2Quantity = document.getElementById('product2').value
-    let product3Quantity = document.getElementById('product3').value
+    // Convert string value of #product1Qty into an integer
+    // Convert string value of #product2Qty into an integer
+    // Convert string value of #product3Qty into an integer
 
-    // convert the string value of input #1 into integer
-    // convert the string value of input #2 into integer
-    // convert the string value of input #3 into integer
+    // Calculate product1Total = (product1Price * product1Qty)
+    // Calculate product2Total = (product2Price * product2Qty)
+    // Calculate product3Total = (product3Price * product3Qty)
 
-    product1Quantity = parseInt(product1Quantity)
-    product2Quantity = parseInt(product2Quantity)
-    product3Quantity = parseInt(product3Quantity)
+    // Calculate the cartTotal = (product1Total + product2Total + product3Total)
 
 
-    // calculate the total cost for product #1 (multiple value* price of product 1 )
-    // calculate the total cost for product #1 (multiple value* price of product 2 )
-    // calculate the total cost for product #1 (multiple value* price of product 3 )
-
-    let totalForProduct1 = (product1Price * product1Quantity)
-    let totalForProduct2 = (product2Price * product2Quantity)
-    let totalForProduct3 = (product3Price * product3Quantity)
-
-    let totalCost = (totalForProduct1 + totalForProduct2 + totalForProduct3)
-
-    document.getElementById('totalAmount').innerHTML = '$' + totalCost
-    
-    console.log(totalForProduct1);
-
-
-  }
-
+  // }
 
 </script>
 

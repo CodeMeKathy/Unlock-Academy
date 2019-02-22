@@ -46,8 +46,12 @@
                 <input type="text" id="qty3" placeholder="0">
               </div>
             </div>
-    
-    
+
+            <div>
+              <button onclick="calculateCartTotal">Calculate Total</button>
+              <h5 id="cartTotal"></h5>
+            </div>
+
           </div>
         </div>
     
@@ -60,30 +64,45 @@
 
   // Create a function to calculateCartTotal {
 
-    // Initialize and get the product1Price from #product1
-    // Initialize and get the product2Price from #product2
-    // Initialize and get the product3Price from #product3
+    function calculateCartTotal() {
 
-    // Convert string value of product1 into an integer
-    // Convert string value of product2 into an integer
-    // Convert string value of product3 into an integer
+    // Initialize product1Price 
+    // Initialize product2Price 
+    // Initialize product3Price 
 
+    let product1Price = 20
+    let product2Price = 30
+    let product3Price = 50
+      
     // Get the input value from #product1Qty
     // Get the input value from #product2Qty
     // Get the input value from #product3Qty
+
+    let product1Qty = parseInt(document.getElementById('qty1').value)
+
+    
 
     // Convert string value of #product1Qty into an integer
     // Convert string value of #product2Qty into an integer
     // Convert string value of #product3Qty into an integer
 
+
+
     // Calculate product1Total = (product1Price * product1Qty)
     // Calculate product2Total = (product2Price * product2Qty)
     // Calculate product3Total = (product3Price * product3Qty)
 
-    // Calculate the cartTotal = (product1Total + product2Total + product3Total)
+    let product1Total = (product1Price * product1Qty)
 
+    // Calculate the cartTotal = (product1Total + product2Total + product3Total)
+    
+    let cartTotal = product1Total
+    document.getElementById('cartTotal').innerHTML = cartTotal
+    console.log(cartTotal);
+    
 
   // }
+    }
 
 </script>
 

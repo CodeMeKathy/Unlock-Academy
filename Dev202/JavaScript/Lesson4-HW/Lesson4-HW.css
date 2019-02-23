@@ -24,6 +24,11 @@ h1  {
 input {
   margin-top: .60em;
   text-align: center;
+  color: #AB526B;
+}
+
+::placeholder {
+  color: #49708A;
 }
 
 button {

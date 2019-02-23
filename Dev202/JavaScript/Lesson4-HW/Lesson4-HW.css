@@ -5,3 +5,48 @@ body {
 h1  {
   color: #E94E77;
 }
+
+#logo {
+  color: white;
+  font-size: .75em;
+  font-family: 'Handlee', cursive;
+
+}
+
+#header {
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  font-size: 3em;
+  margin-bottom: .05em;
+}
+
+
+input {
+  margin-top: .60em;
+  text-align: center;
+}
+
+button {
+  width: 15em;
+  margin-top: 2em !important;
+  margin: auto;
+}
+
+
+
+/* Flexbox */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  width: 300px;
+  height: 50%;
+  margin: auto;
+  justify-content: space-between;
+}

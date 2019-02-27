@@ -4,7 +4,7 @@
   // Current Season
 
 
-  // DayOfWeek
+  // Display the current day
 
 
   function displayDay(e) {
@@ -44,3 +44,7 @@
     }
     
   }
+
+  // Display current Month
+
+

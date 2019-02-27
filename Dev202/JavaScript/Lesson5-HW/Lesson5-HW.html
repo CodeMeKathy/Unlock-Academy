@@ -14,15 +14,24 @@
 
 <body>
   <div id="container">
-    <div class="row">
+    <div class="">
       <div id="leftBell"></div>
       <div id="rightBell"></div>
       <div id="alarmOuterBody" >
         <div id="alarmInnerBody">
           <div class="row">
-            <h1 class="time"></h1>
-            <h3 class="day"></h3>
-            <h5 class="season"></h5>
+            <h1 class="time">
+              <!-- <button onclick="displayTime()"></button> -->
+            </h1>
+            <h5 id="month"> Month
+              <button onclick="displayMonth()"></button>
+            </h5>
+            <h5 id="day"> Day
+              <button onclick="displayDay()"></button>
+            </h5>
+            <h5 id="season">Season
+              <button onclick="displaySeason()"></button>
+            </h5>
           </div>
         </div>
         <div id="leftLeg"></div>

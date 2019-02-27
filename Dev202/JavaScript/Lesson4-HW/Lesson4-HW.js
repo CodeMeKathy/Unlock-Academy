@@ -14,7 +14,7 @@
   // zip should be at least 5 characters (extra credit, validate that zip is a number)
   // Age should be at least 2 characters (extra credit, validate that zip is a number)
 
-  function validateInfo() {
+  function validateInfo(e) {
 
     // Initialize each input field.
     let firstNameInput = document.getElementById('firstNameInputField').value
@@ -25,6 +25,9 @@
     let stateInput = document.getElementById('stateInputField').value
     let zipInput = parseInt(document.getElementById('zipInputField').value)
     let ageInput = parseInt(document.getElementById('ageInputField').value)
+
+
+    // Get value of each in
 
     // Add if statements:
       // Verify if firstNameInput.length < 5; if not alert <error.
@@ -38,34 +41,81 @@
     if (firstNameInput.length < 5) {
       alert('Alert: First names require a minimum of 5 characters.');
       document.getElementById('firstNameInputField').scrollIntoView(true);
-      document.getElementById('firstNameErrorMessage').innerHTML = 'Please enter a name with at least a minimum of 5 characters.';
+      document.getElementById('firstNameErrorMessage').innerHTML = 'Enter valid first name.';
+      // e.preventDefault();
+      return;
 
-    } if (lastNameInput.length < 5) {
-      alert('Alert: Last names require a minimum of 5 characters.')
-    } 
+    } else {
+      document.getElementById('firstNameErrorMessage').innerHTML = '';
+    }    
+    if (lastNameInput.length < 5) {
+      alert('Alert: Last names require a minimum of 5 characters.');
+      document.getElementById('lastNameInputField').scrollIntoView(true);
+      document.getElementById('lastNameErrorMessage').innerHTML = 'Enter a valid last name.';
+      // e.preventDefault();
+      return;
+
+    } else {
+      document.getElementById('lastNameErrorMessage').innerHTML = '';
+    }    
     if (add1Input.length < 10) {
-      alert('Alert: Address 1 responses require a minimum of 10 characters.')
+      alert('Alert: Address 1 responses require a minimum of 10 characters.');
+      document.getElementById('add1InputField').scrollIntoView(true);
+      document.getElementById('add1ErrorMessage').innerHTML = 'Enter a valid street address.';
+      // e.preventDefault();
+      return;
+
+    } else {
+      document.getElementById('add1ErrorMessage').innerHTML = '';
     }
     if (cityInput.length < 5) {
-      alert('Alert: The City name requires a minimum of 5 characters.')
+      alert('Alert: The City name requires a minimum of 5 characters.');
+      document.getElementById('cityInputField').scrollIntoView(true);
+      document.getElementById('cityErrorMessage').innerHTML = 'Enter a valid city name.' ;     
+      // e.preventDefault();
+      return;
+
+    }else {
+      document.getElementById('cityErrorMessage').innerHTML = '';
     }
     if (stateInput.length < 2) {
-      alert('Alert: The State name requires a minimum of 2 characters.')
+      alert('Alert: The State name requires a minimum of 2 characters.');
+      document.getElementById('stateInputField').scrollIntoView(true);
+      document.getElementById('stateErrorMessage').innerHTML = 'Enter a valid state abbreviation.';
+      // e.preventDefault();
+      return;
+
+    } else {
+      document.getElementById('stateErrorMessage').innerHTML = '';
     }
-    if (zipInput.length < 5 && Number.isInteger(zipInput)) {
-      alert('Alert: The Zip Code responses requires a minimum of 5 integers.')
+    if (zipInput.length < 5 && !Number.isInteger('zipInput')) {
+      alert('Alert: The Zip Code responses requires a minimum of 5 integers.');
+      document.getElementById('zipInputField').scrollIntoView(true);
+      document.getElementById('zipErrorMessage').innerHTML = 'Enter a zip code.';
+      // e.preventDefault();
+      return;
+
+    } else {
+      document.getElementById('zipErrorMessage').innerHTML = '';
     }
-    if (ageInput.length == 2 && Number.isInteger(ageInput)) {
-      alert('Alert: The Age responses requires a minimum of 2 integers.')
-    } else
+    if (ageInput.length == 2 && !Number.isInteger('ageInput')) {
+      alert('Alert: The Age responses requires a minimum of 2 integers.');
+      document.getElementById('ageInputField').scrollIntoView(true);
+      document.getElementById('ageErrorMessage').innerHTML = 'Enter a valid age.';
+      e.preventDefault();  
+      
+
+    } else {
+      document.getElementById('ageErrorMessage').innerHTML = '';
+    // }
       // (firstNameInput.length > 5 && 
       // lastNameInput.length > 5 &&
       // add1Input.length > 10 &&
       // cityInput.length > 5 &&
       // stateInput.length > 2 &&
-      // (zipInput.length > 5 && Number.isInteger(zipInput)) && (ageInput.length < 2 && Number.isInteger(ageInput)))
-      {
-      alert('Thank you!  Your shipping information was submitted successfully')
+      // (zipInput.length == 5 && Number.isInteger(zipInput)) && (ageInput.length == 2 && Number.isInteger(ageInput)))
+      // {
+      // alert('Thank you!  Your shipping information was submitted successfully');
     }
     console.log(firstNameInput)
     console.log(firstNameInput.length)

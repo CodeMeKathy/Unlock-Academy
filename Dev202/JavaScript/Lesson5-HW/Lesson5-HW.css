@@ -1,0 +1,26 @@
+:root {
+ --alarmOuterBody: #6F6D6D;
+ --alarmInnerBody: #88ABC2;
+
+
+}
+
+#container {
+  display: flex;
+
+}
+
+#alarmOuterBody{
+background-color: var(--alarmOuterBody);
+width: 600px;
+height: 500px;
+
+}
+
+#alarmInnerBody{
+  background-color: var(--alarmInnerBody);
+  width: 525px;
+  height: 400px;
+  margin: 2.2em;
+
+}

@@ -4,10 +4,9 @@
   // Current Season
 
 
-  // Display the current day
+// Display the current day
 
-
-  function displayDay(e) {
+function displayDay() {
     let d1 = new Date()
     let dateDayInt = d1.getDay()
 
@@ -43,8 +42,17 @@
 
     }
     
+}
+
+// Display current Month
+
+function displayMonth() {
+  let d2 = new Date()
+  let dateMonthInt = d2.getMonth()
+
+  if (dateMonthInt == 0) {
+    document.getElementById('month').innerHTML = 'January'
+
   }
 
-  // Display current Month
-
-
+}

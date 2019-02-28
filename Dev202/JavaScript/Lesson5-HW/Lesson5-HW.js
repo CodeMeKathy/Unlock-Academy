@@ -99,4 +99,13 @@ function displaySeason() {
   if (seasonMonthInt == 11 || seasonMonthInt == 0 || seasonMonthInt == 1) {
     document.getElementById('season').innerHTML = 'Winter'
   }
+  if (seasonMonthInt == 2 || seasonMonthInt == 3 || seasonMonthInt == 4) {
+    document.getElementById('season').innerHTML = 'Spring'
+  }
+  if (seasonMonthInt == 5 || seasonMonthInt == 6 || seasonMonthInt == 7) {
+    document.getElementById('season').innerHTML = 'Summer'
+  }
+  if (seasonMonthInt == 8 || seasonMonthInt == 9 || seasonMonthInt == 10) {
+    document.getElementById('season').innerHTML = 'Fall'
+  }
 }

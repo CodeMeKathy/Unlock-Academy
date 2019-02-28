@@ -91,3 +91,12 @@ function displayMonth() {
   }
   
 }
+
+function displaySeason() {
+  let d3 = new Date()
+  let seasonMonthInt = d3.getMonth()
+
+  if (seasonMonthInt == 11 || seasonMonthInt == 0 || seasonMonthInt == 1) {
+    document.getElementById('season').innerHTML = 'Winter'
+  }
+}

@@ -12,6 +12,22 @@
 
 }())
 
+
+// Add Time with implicit function
+
+setInterval(displayTime, 1000)
+
+function displayTime() {
+  let timeElement = document.getElementById('time')
+
+  let currentDate = new Date()
+  let timeString = currentDate.toLocaleTimeString()
+  timeElement.innerHTML = timeString
+}
+
+
+
+
 // ✅ Display the current day
 
 function displayDay() {

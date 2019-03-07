@@ -96,3 +96,9 @@ body {
   margin-top: -50px;
   margin-left: -50px;
 }
+
+/* Inner Body Styling */
+
+#time {
+  margin: 0;
+}

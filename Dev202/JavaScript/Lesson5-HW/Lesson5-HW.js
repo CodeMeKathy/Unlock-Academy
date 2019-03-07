@@ -4,7 +4,6 @@
   // ✅ Current Season
 
 
-
 // ✅ Add Year with implicit function
 
 (function displayYear() {

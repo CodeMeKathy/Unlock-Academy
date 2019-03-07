@@ -1,8 +1,23 @@
 // Requirements:
-  // Current Day of the Week
-  // Current Month
-  // Current Season
+  // ✅ Current Day of the Week
+  // ✅ Current Month
+  // ✅ Current Season
 
+
+
+// Add Year with implicit function
+
+(function displayYear() {
+  let dy = new Date();
+  document.getElementById('year').innerHTML = dy.getFullYear()
+
+}())
+
+// function displayYear() {
+//   let dy = new Date();
+//   document.getElementById('year').innerHTML = dy.getFullYear()
+//   console.log('year')
+// }
 
 // Display the current day
 
@@ -91,6 +106,8 @@ function displayMonth() {
   }
   
 }
+
+// Display current season
 
 function displaySeason() {
   let d3 = new Date()

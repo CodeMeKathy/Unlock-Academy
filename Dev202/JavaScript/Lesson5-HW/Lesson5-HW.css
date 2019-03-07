@@ -18,7 +18,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* BODY STYLING */
@@ -99,6 +99,30 @@ body {
 
 /* Inner Body Styling */
 
+
 #time {
-  margin: 0;
+  margin-top: 25px;
+}
+
+#day {
+  margin-bottom: 5px;
+}
+
+#month {
+  padding-right: 5px;
+  margin-top: 0;
+}
+
+#dayNumber {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+#year {
+  margin-top: 0;
+}
+
+#dayNumber {
+  padding-right: 5px;
 }

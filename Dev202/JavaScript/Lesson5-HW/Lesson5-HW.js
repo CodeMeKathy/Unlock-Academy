@@ -25,7 +25,7 @@ function displayTime() {
   timeElement.innerHTML = timeString
 }
 
-// Display Day Number 
+// ✅ Display Day Number 
 
 (function displayDayNumber() {
   let dayNumberElement = document.getElementById('dayNumber')
@@ -34,11 +34,11 @@ function displayTime() {
   let dateDayNumber = dayNum.getDay()
   dayNumberElement.innerHTML = dateDayNumber
   
-}())
+}());
 
 // ✅ Display the current day
 
-function displayDay() {
+(function displayDay() {
     let d1 = new Date()
     let dateDayInt = d1.getDay()
 
@@ -65,11 +65,11 @@ function displayDay() {
 
     }
     
-}
+}());
 
 // ✅ Display current Month
 
-function displayMonth() {
+(function displayMonth() {
   let d2 = new Date()
   let dateMonthInt = d2.getMonth()
 
@@ -122,11 +122,11 @@ function displayMonth() {
 
   }
   
-}
+}());
 
 // ✅ Display current season
 
-function displaySeason() {
+(function displaySeason() {
   let d3 = new Date()
   let seasonMonthInt = d3.getMonth()
 
@@ -142,4 +142,4 @@ function displaySeason() {
   if (seasonMonthInt == 8 || seasonMonthInt == 9 || seasonMonthInt == 10) {
     document.getElementById('season').innerHTML = 'Fall'
   }
-}
+}());

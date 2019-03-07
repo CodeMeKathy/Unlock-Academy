@@ -5,7 +5,7 @@
 
 
 
-// Add Year with implicit function
+// ✅ Add Year with implicit function
 
 (function displayYear() {
   let dy = new Date();
@@ -13,13 +13,7 @@
 
 }())
 
-// function displayYear() {
-//   let dy = new Date();
-//   document.getElementById('year').innerHTML = dy.getFullYear()
-//   console.log('year')
-// }
-
-// Display the current day
+// ✅ Display the current day
 
 function displayDay() {
     let d1 = new Date()
@@ -50,7 +44,7 @@ function displayDay() {
     
 }
 
-// Display current Month
+// ✅ Display current Month
 
 function displayMonth() {
   let d2 = new Date()
@@ -107,7 +101,7 @@ function displayMonth() {
   
 }
 
-// Display current season
+// ✅ Display current season
 
 function displaySeason() {
   let d3 = new Date()

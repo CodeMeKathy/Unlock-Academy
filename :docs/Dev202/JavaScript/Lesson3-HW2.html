@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Kathy Lambert" href="https://kathylambert.me/" href="https://github.com/CodeMeKathy">
+
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./Lesson3-HW2.css">
+  <title>Lotus Designs Shoppe</title>
+
+</head>
+
+<body>
+  <div class="center"><h1>Lotus Designs<br> Shoppe</h1></div>
+
+  <div class="row" >
+
+    <div class="column productDiv">
+      <div>
+        <h2 id="productH2">Products</h2>
+      </div>
+
+      <div class="product productItemDiv">
+        <h4 class="productItem"><input type="checkbox" name="product1" value="product1_chosen" onclick="tally()"> Mood Tracker</h4>
+        <h5 class="productPrice">$20</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=300&w=100" alt="February Sticker Bundle" class="productItemPic">
+      </div>
+
+      <div class="product productItemDiv">
+        <h4 class="productItem">Habit Tracker</h4>
+        <h5 class="productPrice">$30</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=300&w=100" alt="February Sticker Bundle" class="productItemPic">
+
+      </div>
+
+      <div class="product productItemDiv">
+        <h4 class="productItem">Sticker Bundle</h4>
+        <h5 class="productPrice">$50</h5>
+        <img src="https://images.pexels.com/photos/940880/pexels-photo-940880.jpeg?auto=compress&cs=tinysrgb&h=275&w=100" alt="February Sticker Bundle" class="productItemPic">
+        
+      </div>
+    </div>
+
+    <div class="column quantityDiv">
+        <div>
+          <h2>Quantity</h2>
+        </div>
+        
+        <form action="" id="qtyForm" name="orderForm">          
+          <div class="quantity">
+
+                <input id="qtyFormInput1" class="formInputField" type="text" autocomplete="off"/>    
+                <button id="btn">Add to Cart</button>
+              
+
+          </div>
+
+          <div class="quantity">
+              
+              <input id="qtyFormInput2" class="formInputField" type="text" autocomplete="off"/>    
+              <button id="btn">Add to Cart</button>
+
+          </div>
+
+          <div class="quantity">
+              
+              <input id="qtyFormInput3" class="formInputField" type="text" autocomplete="off"/>    
+              <button id="btn">Add to Cart</button>
+
+          </div>
+        </form>
+
+
+    </div>
+
+    <div class="column cartDiv">
+        <ul id="shoppingCart">
+
+        </ul>
+    </div>
+
+  </div>
+
+
+  <div class="row center totalDiv" >
+
+    <div class="column">
+        <button>
+          Add Total
+        </button>
+        <h4>$Total</h4>
+    </div>
+  </div>
+
+<script>
+
+// Git Shit Done!:
+  // [] - Reduce padding and or margin to the product (padding right) and or price(padding-left) class.
+  // [] - Reduce the bottom padding for the product title section.
+  // [✅] - Change drop downs to input text field. => [] - JS: convert input.value to string by using partsInt.  See below.
+  // [] - Add button to submit to cart array. => Add event listener (?)
+  // [] - Declare Total Price as a variable and connect (right term?? [] - Find out) is to the dom element. => inset the totalPrice variable and pass it through dynamically in a temperate literal statement.
+  // [] - Insert function to add cartItems to newCart upon submit
+
+// PseudoCode:
+  // Declare cart
+  // Declare selectedProductList
+
+  // Initialize product variable and quantity
+
+  // Create a calculateTotal function w/ a for loop to loop through each product and multiply it by each corresponding quantity. 
+  // Onclick run calculateTotal()
+
+
+// Declarations
+
+  let qtyForm = document.getElementById('qtyForm')
+
+ 
+  let qtyFormInput1 = document.getElementById("qtyFormInput1")
+  let qtyFormInput2 = document.getElementById("qtyFormInput2")
+  let qtyFormInput3 = document.getElementById("3")
+  let shoppingCart = document.getElementById('shoppingCart')
+
+
+// Functionality
+
+ // Event Listeners:
+  // qtyFormInput1 submit event listener functionality
+
+  qtyForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    // qtyFormInput1.focus()
+    // console.log(qtyFormInput1.value)
+    // qtyFormInput1.value= ''
+    // console.log(qtyFormInput1.value)
+    createNewCart(qtyFormInput1.value)
+
+  })
+
+  // qtyFormInput2 submit event listener functionality
+
+  qtyForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  qtyFormInput2.focus()
+  console.log(qtyFormInput2.value)
+  qtyFormInput2.value= ''
+  console.log(qtyFormInput2.value)
+  createNewCart(qtyFormInput2.value)
+  // [] - Add tally function
+
+})
+
+// Create new cart 
+  function createNewCart(x) {
+    let newCartList = []
+
+    let cartListFormat = `<li class="cartListItem"> ${x} <button  onclick='deleteToDoItem(this)'>Delete</button></li>` //Alt approach creates a variable holding the new toDoListItem dynamically wrapped in the <li> tag.
+    
+    newCartList.push((parseInt(qtyFormInput1.value)))
+    // console.log(cartListFormat);
+
+    shoppingCart.insertAdjacentHTML('beforeend', cartListFormat)
+
+    qtyFormInput1.focus()
+    qtyFormInput1.value= ''
+
+  }
+
+
+ // Cost Calculations (Hard-Coded)
+
+  function tally() {
+    let cost = 0
+    if (document.getElementById(qtyFormInput1).checked {
+      cost = cost + 20
+    }
+    console.log(cost);
+    
+  }
+
+  function subTotal() {
+  let itemTotal = parseInt(qtyFormInput1.value) * 2
+  console.log(qtyFormInput1.value * 2);
+  
+  }
+
+// 🔥Not working
+
+//   // qtyFormInput3 submit event listener functionality
+
+//   qtyForm.addEventListener('submit', (e) => {
+//   e.preventDefault()
+//   // qtyFormInput3.focus()
+//   console.log(qtyFormInput3.value)
+//   // qtyFormInput3.value= ''
+//   console.log(qtyFormInput3.value)
+
+// })
+
+
+
+
+
+
+
+
+//  WTF? [] - Review below.
+  // let productItemPrice = document.getElementsByClassName('productPrice')
+      // Does this return a string which will need to be converted.
+      // parseInt() | This is a simple technique to convert a numerical string into a true number, ensuring that our calculation will be consistent.
+
+
+
+  // let selectedItemQuantity = document.getElementsByClassName('itemQuantity').value
+
+  // console.log(selectedItemQuantity)
+
+  // let itemTotal = (productItemPrice * selectedItemQuantity)
+
+  // console.log(itemTotal)
+
+</script>
+
+</body>
+</html>>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>URL Photo Loader</title>
+
+  <style>
+
+    /* General */
+    
+      body {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+
+      input {
+        width: 40vw;
+        text-align: center;
+      }
+
+      /* button {
+        width: 10vw;
+      } */
+
+      #userImage {
+        width: 300px;
+        height: 200px;
+        background-color: #75cece;
+
+
+      }
+
+      .userImageURL {
+        width: 300px;
+        height: 200px;
+
+      }
+
+
+  </style>
+
+</head>
+<body>
+  
+  <section>
+    
+    <div>
+
+      <h1> Submit Photo URL </h1>
+
+
+    </div>
+
+    <div>
+
+        <form>
+
+          <input type="url" name="userImageURL" id="userImageURLInput"
+          placeholder="https://example.com"
+          pattern="https://.*" size="35vw"
+          required>
+          
+          <!-- Example Website: https://images.pexels.com/photos/1097065/pexels-photo-1097065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500  -->
+
+          <br>
+
+          <button name="" type="submit" onclick = "submitImageURL()">Click To Display Image URL Below</button>
+      </form> 
+
+    </div>
+ 
+
+    <div id="userImage">
+
+      <img src="" class="userImage" alt="" id="userImage"/>
+
+    </div>
+
+
+
+    </div>
+
+  </section>
+  <script>
+  
+    // Pass thru the userImageURL as a parameter from the userURL input field.
+    // Reference Image Element
+    // Pass through the new image url to the src attribute.
+  
+    var urlInputElement = document.getElementById('userImageURLInput');
+
+    var userImageURL = '';
+    
+    inputElement.addEventListener('change', function(e) {
+
+      userImageURL = e.target.value;
+      // document.write(userImageURL); // Test Confirmed.
+
+
+    
+    })
+    
+
+
+
+  </script>
+
+</body>
+</html>

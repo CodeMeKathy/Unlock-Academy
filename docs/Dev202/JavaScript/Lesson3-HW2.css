@@ -1,0 +1,115 @@
+body {
+  background-color: #E7EDEA;
+  /* width: calc(100% - 40px); */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* text-align: center; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap; */
+}
+
+.center {
+  text-align: center
+}
+
+h1 {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 45px;
+}
+
+/* .quantityDiv { */
+  /* background-color: #c198e7; */
+  /* width: 50em; */
+  /* order: 2; */
+/* } */
+
+.productDiv {
+  background-color: #a2f7f7;
+  flex-direction: row;
+  /* margin-left: 10% !important; */
+  /* margin-bottom: 0; */
+  /* width: 30em; */
+  /* order: 1; */
+}
+
+.productItemDiv {
+  display: flex;
+  flex: wrap;
+  /* background-color:#bdbdbd; */
+    /*Remove before depo */
+  height: 50px;
+  text-align: justify;
+}
+
+#productH2 {
+  margin-bottom: 0px;
+}
+
+.productItem{
+  margin: 15px;
+  margin-left: 5px;
+  width: 125px;
+}
+
+.productPrice {
+  margin-top: 17px;
+
+}
+
+.productItemPic {
+  margin-left: 20px;
+
+}
+
+.product {
+  margin: 10px;
+  height: 35px;
+}
+
+.quantity {
+
+    /*Remove before depo */
+  margin: 10px;
+  height: 35px;
+}
+
+/* .quantityDiv {
+  margin-left: 10% !important;
+  width: 20% !important;
+} */
+  #productH2 {
+  margin-bottom: 0px;
+}
+
+.cartDiv {
+  background-color: blue;
+}
+
+/* [] - Remove totalSection?  */
+#totalSection {
+  /* display: flex; */
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+  float: left;
+  order: 4;
+
+}
+
+.totalDiv {
+  background-color: #d380b3;
+}
+
+/* Flexbox Containers */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.column {
+  flex: 30%;
+  margin: 20px;
+  
+}

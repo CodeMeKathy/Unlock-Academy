@@ -2,9 +2,6 @@
  --alarmOuterBody: #6F6D6D;
  /* --alarmInnerBody: #88abc2; */
  
-
-
-
 }
 
 /* FLEX CONTAINER */
@@ -61,7 +58,7 @@ body {
   border-top-right-radius: 5px;
 }
 
-#leftBell {
+/* #leftBell {
   background-color: var(--alarmOuterBody);
   width: 100px;
   height: 50px;
@@ -75,7 +72,7 @@ body {
   height: 50px;
   float: right;
   border-radius: 50% 50% 10% 10%;
-}
+} */
 
 
 #leftLeg {
@@ -99,6 +96,28 @@ body {
 }
 
 /* Inner Body Styling */
+
+.day {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+
+.season {
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-right: 10px;
+  float: right;
+  margin-top: -80px;
+}
+
 
 
 #time {

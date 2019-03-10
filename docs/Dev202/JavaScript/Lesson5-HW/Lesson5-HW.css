@@ -18,6 +18,12 @@
   justify-content: center;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* BODY STYLING */
 
 body {
@@ -41,21 +47,6 @@ body {
   margin-top: 330px;
   margin-left: -50px;
 
-}
-
-#alarmInnerBody{
-
-  /* flex-direction: column; */
-  align-self: center;
-  /* justify-content: center; */
-  /* background-color: var(--alarmInnerBody); */
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  width: 450px;
-  height: 300px;
-  margin: 2.2em;
-  /* border-radius: 5%; */
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 /* #leftBell {
@@ -97,6 +88,21 @@ body {
 
 /* Inner Body Styling */
 
+#alarmInnerBody{
+
+  /* flex-direction: column; */
+  align-self: center;
+  /* justify-content: center; */
+  /* background-color: var(--alarmInnerBody); */
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  width: 450px;
+  height: 300px;
+  margin: 2.2em;
+  /* border-radius: 5%; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 .day {
   display: flex;
   justify-content: flex-start;
@@ -119,10 +125,14 @@ body {
 }
 
 
-
-#time {
-  margin-top: 25px;
+div.row.time {
+  margin-top: -50px;
+  margin-left: 60px;
 }
+
+/* #time {
+  margin-right: 0;
+} */
 
 #day {
   margin-bottom: 5px;
@@ -146,3 +156,27 @@ body {
 #dayNumber {
   padding-right: 5px;
 }
+
+
+#timerCountdown {
+  margin: 0;
+}
+
+#timerStatusMessage {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#timerButtonInst {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+input #userMin {
+  margin: 0px;
+}
+
+#timerButton {
+  margin-top: 2px;
+}
+

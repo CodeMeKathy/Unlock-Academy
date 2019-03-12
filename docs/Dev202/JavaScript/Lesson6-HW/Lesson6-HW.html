@@ -18,7 +18,17 @@
   <div id="imgDiv3"></div>
   
   <script>
-    
+    let imgArray = []
+    let imgCounter = 0
+
+      while (imgCounter <= 19) {
+
+        imgArray.push(imgCounter)
+        // document.write("<img src='images/img"+imgCounter+".jpg'/>")
+        document.write("<img src='images/img"+imgArray[imgCounter]+".jpg'/>")
+        imgCounter++
+      }
+
 
   </script>
 </body>

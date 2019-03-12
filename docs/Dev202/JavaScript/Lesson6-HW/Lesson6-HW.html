@@ -13,20 +13,23 @@
 
   <h1> Motivation & Inspiration </h1>
 
-  <div id="imgDiv1"></div>
-  <div id="imgDiv2"></div>
-  <div id="imgDiv3"></div>
+  <div id="imgDiv"></div>
+
   
   <script>
     let imgArray = []
     let imgCounter = 0
 
-      while (imgCounter <= 19) {
+      while (imgCounter <= 17) {
 
         imgArray.push(imgCounter)
         // document.write("<img src='images/img"+imgCounter+".jpg'/>")
-        document.write("<img src='images/img"+imgArray[imgCounter]+".jpg'/>")
+        imagesArray = "<img src='images/img"+imgArray[imgCounter]+".jpg'/>"
+        console.log(imagesArray);
+        
+        document.getElementById('imgDiv').innerHTML += imagesArray
         imgCounter++
+
       }
 
 

@@ -23,8 +23,8 @@
     let add2Input = document.getElementById('add2InputField').value
     let cityInput = document.getElementById('cityInputField').value
     let stateInput = document.getElementById('stateInputField').value
-    let zipInput = parseInt(document.getElementById('zipInputField').value)
-    let ageInput = parseInt(document.getElementById('ageInputField').value)
+    let zipInput = (document.getElementById('zipInputField').value)
+    let ageInput = (document.getElementById('ageInputField').value)
 
 
     // Get value of each in
@@ -42,7 +42,6 @@
       alert('Alert: First names require a minimum of 5 characters.');
       document.getElementById('firstNameInputField').scrollIntoView(true);
       document.getElementById('firstNameErrorMessage').innerHTML = 'Enter valid first name.';
-      // e.preventDefault();
       return;
 
     } else {
@@ -52,7 +51,6 @@
       alert('Alert: Last names require a minimum of 5 characters.');
       document.getElementById('lastNameInputField').scrollIntoView(true);
       document.getElementById('lastNameErrorMessage').innerHTML = 'Enter a valid last name.';
-      // e.preventDefault();
       return;
 
     } else {
@@ -62,7 +60,6 @@
       alert('Alert: Address 1 responses require a minimum of 10 characters.');
       document.getElementById('add1InputField').scrollIntoView(true);
       document.getElementById('add1ErrorMessage').innerHTML = 'Enter a valid street address.';
-      // e.preventDefault();
       return;
 
     } else {
@@ -72,7 +69,7 @@
       alert('Alert: The City name requires a minimum of 5 characters.');
       document.getElementById('cityInputField').scrollIntoView(true);
       document.getElementById('cityErrorMessage').innerHTML = 'Enter a valid city name.' ;     
-      // e.preventDefault();
+
       return;
 
     }else {
@@ -82,55 +79,30 @@
       alert('Alert: The State name requires a minimum of 2 characters.');
       document.getElementById('stateInputField').scrollIntoView(true);
       document.getElementById('stateErrorMessage').innerHTML = 'Enter a valid state abbreviation.';
-      // e.preventDefault();
       return;
 
     } else {
       document.getElementById('stateErrorMessage').innerHTML = '';
     }
-    if (zipInput.length < 5 && !Number.isInteger('zipInput')) {
+    if (zipInput.length < 5 || !Number.isInteger(parseInt(zipInput))) {
       alert('Alert: The Zip Code responses requires a minimum of 5 integers.');
       document.getElementById('zipInputField').scrollIntoView(true);
       document.getElementById('zipErrorMessage').innerHTML = 'Enter a zip code.';
-      // e.preventDefault();
       return;
 
     } else {
       document.getElementById('zipErrorMessage').innerHTML = '';
     }
-    if (ageInput.length == 2 && !Number.isInteger('ageInput')) {
+    if (ageInput.length != 2 || !Number.isInteger(parseInt(ageInput))) {
       alert('Alert: The Age responses requires a minimum of 2 integers.');
       document.getElementById('ageInputField').scrollIntoView(true);
       document.getElementById('ageErrorMessage').innerHTML = 'Enter a valid age.';
-      e.preventDefault();  
+      // e.preventDefault();  
       
 
     } else {
       document.getElementById('ageErrorMessage').innerHTML = '';
-    // }
-      // (firstNameInput.length > 5 && 
-      // lastNameInput.length > 5 &&
-      // add1Input.length > 10 &&
-      // cityInput.length > 5 &&
-      // stateInput.length > 2 &&
-      // (zipInput.length == 5 && Number.isInteger(zipInput)) && (ageInput.length == 2 && Number.isInteger(ageInput)))
-      // {
-      // alert('Thank you!  Your shipping information was submitted successfully');
+      alert('Thank you! Your shipping information was submitted successfully');
     }
-    console.log(firstNameInput)
-    console.log(firstNameInput.length)
-    console.log(lastNameInput)
-    console.log(lastNameInput.length)
-    console.log(add1Input)
-    console.log(add1Input.length)
-    console.log(add2Input)
-    console.log(cityInput)
-    console.log(stateInput)
-    console.log(zipInput)
-    console.log(zipInput.length)
-    console.log(Number.isInteger(zipInput))
-    console.log(ageInput)
-    console.log(ageInput.length)
-    console.log(Number.isInteger(ageInput));
 
   }
